@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>すれ違いマッチングアプリ - ミニゲーム付き</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>すれ違いマッチング</h1>
+    <p>近くのユーザーとリアルタイムで出会おう！</p>
+  </header>
+  <main>
+    <!-- 地図やすれ違い表示領域 -->
+    <section id="map-section">
+      <div id="map-container" aria-label="近くにいるユーザーを表示するエリア"></div>
+      <aside id="nearby-list">
+        <h2>すれ違ったユーザー</h2>
+        <ul id="user-list"></ul>
+      </aside>
+    </section>
+    <!-- ユーザーとのインタラクションエリア -->
+    <section id="interaction-section">
+      <h2>インタラクション</h2>
+      <div id="interaction-area">
+        <p>近くにいるユーザーをクリックしてミニゲームやチャットを楽しめます。</p>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <p>このアプリはプロトタイプです。位置情報の取得にはブラウザの許可が必要です。</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
